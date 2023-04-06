@@ -836,7 +836,7 @@ jobs:
 
   StressTrackingTest:
     name: "StressTrackingTest"
-    needs: [MakeBinary, EC2LinuxIntegrationTest, ECSEC2IntegrationTest, ECSFargateIntegrationTest, GenerateTestMatrix]
+    needs: [MakeBinary, EC2LinuxIntegrationTest, ECSEC2IntegrationTest, ECSFargateIntegrationTest, GenerateTestMatrix, EC2AcceptanceIntegrationTest]
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
